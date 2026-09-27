@@ -1,4 +1,8 @@
 com\findback\service\ItemService.class
+com\findback\repository\ItemRepository.class
+com\findback\dao\ItemDao.class
 com\findback\model\Item.class
 com\findback\ui\MainMenu.class
+com\findback\database\DatabaseConnection.class
 com\findback\Main.class
+com\findback\util\DatabaseConnection.class

@@ -1,40 +1,27 @@
 package com.findback.service;
 
 import com.findback.model.Item;
+import com.findback.repository.ItemRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ItemService {
 
-    private final List<Item> items;
+    private final ItemRepository itemRepository;
 
     public ItemService() {
-        items = new ArrayList<>();
+        itemRepository = new ItemRepository();
     }
 
     public void addItem(Item item) {
-        items.add(item);
+        itemRepository.save(item);
     }
 
     public List<Item> getAllItems() {
-        return items;
+        return itemRepository.findAll();
     }
 
     public List<Item> searchItems(String keyword) {
-
-    List<Item> results = new ArrayList<>();
-
-    for (Item item : items) {
-
-        if (item.getName().toLowerCase().contains(keyword.toLowerCase())
-                || item.getCategory().toLowerCase().contains(keyword.toLowerCase())
-                || item.getLocation().toLowerCase().contains(keyword.toLowerCase())) {
-
-            results.add(item);
-        }
+        return itemRepository.search(keyword);
     }
-
-    return results;
-}
 }

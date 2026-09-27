@@ -1,4 +1,8 @@
+D:\Project\FIndBack\src\main\java\com\findback\Database\DatabaseConnection.java
 D:\Project\FIndBack\src\main\java\com\findback\Main.java
 D:\Project\FIndBack\src\main\java\com\findback\model\Item.java
+D:\Project\FIndBack\src\main\java\com\findback\repository\ItemRepository.java
 D:\Project\FIndBack\src\main\java\com\findback\service\ItemService.java
 D:\Project\FIndBack\src\main\java\com\findback\ui\MainMenu.java
+D:\Project\FIndBack\src\main\java\com\findback\util\dao\ItemDao.java
+D:\Project\FIndBack\src\main\java\com\findback\util\DatabaseConnection.java
